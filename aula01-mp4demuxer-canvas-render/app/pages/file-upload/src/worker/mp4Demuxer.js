@@ -36,6 +36,7 @@ export default class MP4Demuxer {
     const consumeFile = new WritableStream({
       /** @param {Uint8Array} chunk */
       write: chunk => {
+        console.log('Mandou um pedacin')
         debugger
       },
       close: () => {
